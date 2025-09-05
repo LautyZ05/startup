@@ -8,6 +8,10 @@
 - [Canvas](https://byu.instructure.com)
 - [MDN](https://developer.mozilla.org)
 
+## Sep 5th, 2025
+
+I made an aws account and I am very confused. As well as made a repository and cloned it into vscode and github and everything and still am very confused. I will definitly be talking to a TA hopefully soon (probebly next week) to ask questions. Also downloaded vscode for the first time and also very confused on how to use it and committing changes but I'm getting the hang of it. Hopefully this gets easier over time.
+
 ## AWS
 
 My IP address is: 54.81.96.130
