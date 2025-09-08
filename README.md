@@ -1,4 +1,4 @@
-# Your startup name here
+# Connect the Dots
 
 [My Notes](notes.md)
 
