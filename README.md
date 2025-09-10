@@ -28,11 +28,11 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Have you ever wanted to play a simple but addictive online game similar to Google's Tic Tac Toe but tired of the it at the same time? Well here's a new simple way to play Connect 4 on any device with internet compatibility anywhere you want. Connect the Dots is a simple application where you can either play againts a random computer or with friends in person. You can practice your Connect 4 skills as many times as you want or use it as a quick distraction. You can even have small competitions with your friends thanks to the easy to see scoreboard that will keep track of your wins/losses and calculate your win percentage.
 
 ### Design
 
-![Design image](placeholder.png)
+![Design image](design_image.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
