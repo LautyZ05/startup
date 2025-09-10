@@ -34,7 +34,8 @@ Have you ever wanted to play a simple but addictive online game similar to Googl
 
 ![Design image](design_image.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In the image above, you can see a rough sketch of the design of the application. This is a rough draft so many things may change.
+Down below, you can see how a user will be interact with the server which will hold the scoreboards.
 
 ```mermaid
 sequenceDiagram
