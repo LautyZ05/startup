@@ -62,12 +62,12 @@ sequenceDiagram
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Will use 3-4 HTML pages for starting page, multiplayer select/scoreboard page, game page, and a fourth extra page for either an about us, settings page, or something that could improve the userbility.
+- **CSS** - A nice, simple, and clean UI that can easily be switch between a light or dark mode without dramaticly changing things. 
+- **React** - Presseble buttons to enter the application, to choose type of game, to login, and controls to move the dots left or right.
+- **Service** - Connects to server to store and retrieve login and scoreboard information.
+- **DB/Login** - Stores the users names and their scores when logged in.
+- **WebSocket** - Once a game for a logged in user has finished, their score will be uploaded, calculated, and then displayed to all users in the scoreboard.
 
 ## 🚀 AWS deliverable
 
