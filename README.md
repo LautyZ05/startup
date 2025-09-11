@@ -43,8 +43,11 @@ sequenceDiagram
     actor Friend 2
     actor Friend 3
     Friend 1->>Website: Friend 1 +1 win
-    Website->>Friend 2: Friend 1 +1 win
-    Website->>Friend 3: Friend 1 +1 win
+    Website-->>Friend 2: Friend 1 +1 win
+    Website-->>Friend 3: Friend 1 +1 win
+    Friend 3->>Website: Friend 3 -1 loss
+    Website-->>Friend 1: Friend 3 -1 loss
+    Website-->>Friend 2: Friend 3 -1 loss
 ```
 
 ### Key features
