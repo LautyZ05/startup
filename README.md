@@ -35,6 +35,7 @@ Have you ever wanted to play a simple but addictive online game similar to Googl
 ![Design image](design_image.png)
 
 In the image above, you can see a rough sketch of the design of the application. This is a rough draft so many things may change.
+
 Down below, you can see how a user will be interact with the server which will hold the scoreboards.
 
 ```mermaid
