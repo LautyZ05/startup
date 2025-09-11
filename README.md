@@ -39,9 +39,12 @@ Down below, you can see how a user will be interact with the server which will h
 
 ```mermaid
 sequenceDiagram
-    actor You
-    
-    You->>Website: Replace this with your design hello
+    actor Friend 1
+    actor Friend 2
+    actor Friend 3
+    Friend 1->>Website: Friend 1 +1 win
+    Website->>Friend 2: Friend 1 +1 win
+    Website->>Friend 3: Friend 1 +1 win
 ```
 
 ### Key features
