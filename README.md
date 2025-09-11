@@ -52,9 +52,11 @@ sequenceDiagram
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Ability to play Connect 4 as a guest or logged in
+- Single play or multiplay
+- Secure login
+- Updated scoreboards with correct scores (wins/losses/percentage)
+- Controls for easy dot selection
 
 ### Technologies
 
