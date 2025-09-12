@@ -18,14 +18,16 @@ I made an aws account and I am very confused. As well as made a repository and c
 
 I finally made my AWS server and it was pretty cool. Even though everything seemed super complicated at first, it was actually a pretty smooth process. I'm still a bit confused but I'll probably get used to everythin after a while.
 
-I also have set up my domain name and I was worried that I did something wrong multiple times because nothing seemed to work but I just had to wait a few minutes and check around like checking my spam folder. After that everything ran great!
+I also have set up my domain name and I was worried that I did something wrong multiple times because nothing seemed to work but I just had to wait a few minutes and check around like checking my spam folder. After that everything ran great! I couldn't access it through my laptop but it worked fine on my phone and iPad.
+
+Some time has passed and I finally the website is secured and I can access it through my computer and it works great
 
 ## AWS
 
 My IP address is: 52.201.35.163
 This is my IP address that I got from setting up the AWS server which was super exciting, weird, and a bit complicated lol. (9/12/25)
 
-connectthedots.click is my domain name that I finally set up and have running. As of today, I can't access it through my computer but it works perfectly fine on my phone (9/12/25)
+connectthedots.click is my domain name that I finally set up and have running. As of today,(9/12/25) it is secured and using HTTPS
 
 ## Caddy
 
