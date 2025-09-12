@@ -23,6 +23,8 @@ I finally made my AWS server and it was pretty cool. Even though everything seem
 My IP address is: 52.201.35.163
 This is my IP address that I got from setting up the AWS server which was super exciting, weird, and a bit complicated lol. (9/12/25)
 
+connectthedots.click is my domain name that I finally set up and have running. As of today, I can't access it through my computer but it works perfectly fine on my phone (9/12/25)
+
 ## Caddy
 
 No problems worked just like it said in the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/webServers/https/https.md).
