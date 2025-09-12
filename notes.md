@@ -8,14 +8,19 @@
 - [Canvas](https://byu.instructure.com)
 - [MDN](https://developer.mozilla.org)
 
-## Sep 5th, 2025
+## Notes (by day)
+### Sep 5th, 2025
 
 I made an aws account and I am very confused. As well as made a repository and cloned it into vscode and github and everything and still am very confused. I will definitly be talking to a TA hopefully soon (probebly next week) to ask questions. Also downloaded vscode for the first time and also very confused on how to use it and committing changes but I'm getting the hang of it. Hopefully this gets easier over time.
 
+### Sep 12th, 2025
+
+I finally made my AWS server and it was pretty cool. Even though everything seemed super complicated at first, it was actually a pretty smooth process. I'm still a bit confused but I'll probably get used to everythin after a while.
+
 ## AWS
 
-My IP address is: 54.81.96.130
-Launching my AMI I initially put it on a private subnet. Even though it had a public IP address and the security group was right, I wasn't able to connect to it.
+My IP address is: 52.201.35.163
+This is my IP address that I got from setting up the AWS server which was super exciting, weird, and a bit complicated lol. (9/12/25)
 
 ## Caddy
 
