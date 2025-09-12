@@ -18,6 +18,8 @@ I made an aws account and I am very confused. As well as made a repository and c
 
 I finally made my AWS server and it was pretty cool. Even though everything seemed super complicated at first, it was actually a pretty smooth process. I'm still a bit confused but I'll probably get used to everythin after a while.
 
+I also have set up my domain name and I was worried that I did something wrong multiple times because nothing seemed to work but I just had to wait a few minutes and check around like checking my spam folder. After that everything ran great!
+
 ## AWS
 
 My IP address is: 52.201.35.163
