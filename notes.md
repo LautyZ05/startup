@@ -27,7 +27,7 @@ Some time has passed and I finally the website is secured and I can access it th
 My IP address is: 52.201.35.163
 This is my IP address that I got from setting up the AWS server which was super exciting, weird, and a bit complicated lol. (9/12/25)
 
-connectthedots.click is my domain name that I finally set up and have running. As of today,(9/12/25) it is secured and using HTTPS
+[connectthedots.click](https://connectthedots.click) is my domain name that I finally set up and have running. As of today,(9/12/25) it is secured and using HTTPS
 
 ## Caddy
 
