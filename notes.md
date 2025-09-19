@@ -29,6 +29,8 @@ Did the structure HTML assignment and it really brought back memories from highs
 
 Did the input HTML assignment and it reminded me how much repitition there is in HTML. As well as learned/relearned how to program buttons/checkbox/text areas.
 
+Did the media HTML assignment and it looked harder than it actually was. I wasn't too sure on where I could get a video to change so I instead added a youtube video and that worked.
+
 ## AWS
 
 My IP address is: 52.201.35.163
