@@ -27,6 +27,8 @@ Some time has passed and I finally the website is secured and I can access it th
 
 Did the structure HTML assignment and it really brought back memories from highschool. Everything we coded was very similar to what I remember.
 
+Did the input HTML assignment and it reminded me how much repitition there is in HTML. As well as learned/relearned how to program buttons/checkbox/text areas.
+
 ## AWS
 
 My IP address is: 52.201.35.163
