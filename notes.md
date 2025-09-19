@@ -8,6 +8,7 @@
 - [Canvas](https://byu.instructure.com)
 - [MDN](https://developer.mozilla.org)
 - [Markdown Instructions](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [HTML Intro](https://github.com/webprogramming260/.github/blob/main/profile/html/introduction/introduction.md)
 
 ## Notes (by day)
 ### Sep 5th, 2025
@@ -21,6 +22,10 @@ I finally made my AWS server and it was pretty cool. Even though everything seem
 I also have set up my domain name and I was worried that I did something wrong multiple times because nothing seemed to work but I just had to wait a few minutes and check around like checking my spam folder. After that everything ran great! I couldn't access it through my laptop but it worked fine on my phone and iPad.
 
 Some time has passed and I finally the website is secured and I can access it through my computer and it works great
+
+### Sep 19th, 2025
+
+Did the structure HTML assignment and it really brought back memories from highschool. Everything we coded was very similar to what I remember.
 
 ## AWS
 
