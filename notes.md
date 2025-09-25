@@ -9,6 +9,7 @@
 - [MDN](https://developer.mozilla.org)
 - [Markdown Instructions](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [HTML Intro](https://github.com/webprogramming260/.github/blob/main/profile/html/introduction/introduction.md)
+- [My website](https://startup.connectthedots.click)
 
 ## Notes (by day)
 ### Sep 5th, 2025
@@ -31,6 +32,12 @@ Did the input HTML assignment and it reminded me how much repitition there is in
 
 Did the media HTML assignment and it looked harder than it actually was. I wasn't too sure on where I could get a video to change so I instead added a youtube video and that worked.
 
+### Sep 24th, 2025
+
+I created three html files and wrote code in it to roughly match what I had previously had drawn up. As I created it and started looking at the design, I'm currently thinking of switching some things around like having the log in and guest options be in the index instaed of the select file but I'm going to keep thinking about on what I should change or what should stay.
+
+Also I got to enter into my startup folder in the terminal to be able to upload my html files to the server. (thank you TA for showing me what to do as I was never going to get it on my own)
+
 ## AWS
 
 My IP address is: 52.201.35.163
@@ -44,9 +51,7 @@ No problems worked just like it said in the [instruction](https://github.com/web
 
 ## HTML
 
-This was easy. I was careful to use the correct structural elements such as header, footer, main, nav, and form. The links between the three views work great using the `a` element.
-
-The part I didn't like was the duplication of the header and footer code. This is messy, but it will get cleaned up when I get to React.
+As of Sep. 24th, 2025, I created, edited, and uploaed 3 html files for my website. At it's current state it looks odd and still needs a lot of work but has the essentials that I need.
 
 ## CSS
 
