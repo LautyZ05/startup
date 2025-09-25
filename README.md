@@ -80,24 +80,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **HTML pages** - I did not complete this part of the deliverable.
-Created 3 HTML files and uploaded them
-- [x] **Proper HTML element usage** - I did not complete this part of the deliverable.
-Seperated everything using body, header, section, and footer
-- [x] **Links** - I did not complete this part of the deliverable.
-I have links that link to the html pages and to my github
-- [x] **Text** - I did not complete this part of the deliverable.
-Added text like my title, button names, and temporary description.
-- [x] **3rd party API placeholder** - I did not complete this part of the deliverable.
-The leaderboard is the placeholder which will update with scores
-- [x] **Images** - I did not complete this part of the deliverable.
-Currently have a temporary (or placeholder) image for what I want the C4 board to look like
-- [x] **Login placeholder** - I did not complete this part of the deliverable.
-Have temporary buttons for log in which are currently linked to play html file
-- [x] **DB data placeholder** - I did not complete this part of the deliverable.
-The leaderboard is also the placeholder for this as well which will get updated
-- [x] **WebSocket placeholder** - I did not complete this part of the deliverable.
-The leaderboard again as its going to be recieving data to show the scores
+- [x] **HTML pages** - Created 3 HTML files and uploaded them
+- [x] **Proper HTML element usage** - Seperated everything using body, header, section, and footer
+- [x] **Links** - I have links that link to the html pages and to my github
+- [x] **Text** - Added text like my title, button names, and temporary description.
+- [x] **3rd party API placeholder** - The leaderboard is the placeholder which will update with scores
+- [x] **Images** - Currently have a temporary (or placeholder) image for what I want the C4 board to look like
+- [x] **Login placeholder** - Have temporary buttons for log in which are currently linked to play html file
+- [x] **DB data placeholder** - The leaderboard is also the placeholder for this as well which will get updated
+- [x] **WebSocket placeholder** - The leaderboard again as its going to be recieving data to show the scores
 
 ## 🚀 CSS deliverable
 
