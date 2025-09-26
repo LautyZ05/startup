@@ -38,6 +38,10 @@ I created three html files and wrote code in it to roughly match what I had prev
 
 Also I got to enter into my startup folder in the terminal to be able to upload my html files to the server. (thank you TA for showing me what to do as I was never going to get it on my own)
 
+### Sep 26th, 2025
+
+I did the flex assignment and it was way more complicated than I thought at least for me. Wrote down some notes in the CSS section to help quickly remember what some things do.
+
 ## AWS
 
 My IP address is: 52.201.35.163
@@ -55,48 +59,24 @@ As of Sep. 24th, 2025, I created, edited, and uploaed 3 html files for my websit
 
 ## CSS
 
-This took a couple hours to get it how I wanted. It was important to make it responsive and Bootstrap helped with that. It looks great on all kinds of screen sizes.
+some helpful notes about certain stuff that I most likely need help reminding with an example down below
 
-Bootstrap seems a bit like magic. It styles things nicely, but is very opinionated. You either do, or you do not. There doesn't seem to be much in between.
+- flex-direction: helps with what order content will be going in, row (horizontal) or column (vertical)
+- justify-content and align-items: both essnetially help format the items. Depending on flex-direction, they essentially swap directions. For row, justify-content is left-right and align-items is top-down. And it's the opposite for column, justify-content is top-down and align-items is left-right
 
-I did like the navbar it made it super easy to build a responsive header.
-
-```html
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">
-            <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" />
-            Calmer
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="play.html">Play</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+```css
+      example {
+        flex: 0 40px;
+        background-color: darkgrey;
+        font-size: 20px;
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+      }
 ```
 
-I also used SVG to make the icon and logo for the app. This turned out to be a piece of cake.
-
-```html
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" fill="#0066aa" rx="10" ry="10" />
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-size="72" font-family="Arial" fill="white">C</text>
-</svg>
-```
 
 ## React Part 1: Routing
 
