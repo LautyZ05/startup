@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+#index {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding: 10px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    padding: 2px;
+}
