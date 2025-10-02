@@ -101,7 +101,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] **Application text content** - Font was chosen (sans serif) and text size has been changed for some of the text.
 - [x] **Application images** - Temporary image of c4 board still in use
 
-# Extra
+### Extra
 
 During this deliverable, I had also changed some of the format from the previous deliverable like moving the h1 tag in index.html from the header to the main body. As well as added two more html pages for "About" and "Settings" with temporary text. Made sure to stylize it a bit with css as well, even though the text is temporary.
 
