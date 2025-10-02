@@ -94,12 +94,16 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **Header, footer, and main content body** - The header is permanently at the top, the footer is permanently at the bottom, and the main is in the middle. 
-- [x] **Navigation elements** - At the header is a back button that takes you to the previous page and at the bottem in the footer are some navigation buttons to some other pages.
-- [x] **Responsive to window resizing** - When window resizes, the content stays centered in their respect areas.
-- [x] **Application elements** - Instead of links for the player select and to enter, they've been changed to bootstrap buttons
-- [x] **Application text content** - Font was chosen (sans serif) and text size has been changed for some of the text
+- [x] **Header, footer, and main content body** - The header is permanently at the top of the page, the footer is permanently at the bottom, and the main is in the middle taking up all the space that the header and footer don't use. 
+- [x] **Navigation elements** - At the header is a back button that takes you to the previous page (index <- select <- play) and at the bottem in the footer are some navigation buttons to some extra pages (About, Settings, and the Github link).
+- [x] **Responsive to window resizing** - When window resizes, the content stays centered in their respective areas.
+- [x] **Application elements** - Instead of links for the player select, back link, and the to enter link, they've been changed to bootstrap buttons.
+- [x] **Application text content** - Font was chosen (sans serif) and text size has been changed for some of the text.
 - [x] **Application images** - Temporary image of c4 board still in use
+
+# Extra
+
+During this deliverable, I had also changed some of the format from the previous deliverable like moving the h1 tag in index.html from the header to the main body. As well as added two more html pages for "About" and "Settings" with temporary text. Made sure to stylize it a bit with css as well, even though the text is temporary.
 
 ## 🚀 React part 1: Routing deliverable
 
