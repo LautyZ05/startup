@@ -94,12 +94,12 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [ ] **Application images** - I did not complete this part of the deliverable.
+- [x] **Header, footer, and main content body** - The header is permanently at the top, the footer is permanently at the bottom, and the main is in the middle. 
+- [x] **Navigation elements** - At the header is a back button that takes you to the previous page and at the bottem in the footer are some navigation buttons to some other pages.
+- [x] **Responsive to window resizing** - When window resizes, the content stays centered in their respect areas.
+- [x] **Application elements** - Instead of links for the player select and to enter, they've been changed to bootstrap buttons
+- [x] **Application text content** - Font was chosen (sans serif) and text size has been changed for some of the text
+- [x] **Application images** - Temporary image of c4 board still in use
 
 ## 🚀 React part 1: Routing deliverable
 
