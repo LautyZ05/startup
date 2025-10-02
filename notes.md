@@ -42,6 +42,13 @@ Also I got to enter into my startup folder in the terminal to be able to upload 
 
 I did the flex assignment and it was way more complicated than I thought at least for me. Wrote down some notes in the CSS section to help quickly remember what some things do.
 
+### Oct 1st, 2025
+
+To deploy startup, use this
+```
+      ./deployFiles.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
+```
+
 ## AWS
 
 My IP address is: 52.201.35.163
