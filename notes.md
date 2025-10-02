@@ -46,7 +46,7 @@ I did the flex assignment and it was way more complicated than I thought at leas
 
 To deploy startup, use this
 ```
-      ./deployFiles.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
+./deployFiles.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
 ```
 
 ## AWS
