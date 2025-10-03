@@ -48,6 +48,11 @@ To deploy startup, use this
 ```
 ./deployFiles.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
 ```
+Also I added 2 more html pages to my startup and worked on my css page
+
+### Oct 3rd, 2025
+
+Did the vite assignment and it was a bit weired trying to change the site's elements. I understood the html part of the jsx file as html calls main.jsx, then that one calls app.jsx. But the css was confusing at first but then just rereading the assignment a bit more carefully I figured out that the app.css wasn't for the entirety of the app but only for things like the images and effects. While the index.css was the actual stylizer of the webpage.
 
 ## AWS
 
