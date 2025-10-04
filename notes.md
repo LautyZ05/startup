@@ -56,6 +56,8 @@ Did the vite assignment and it was a bit weired trying to change the site's elem
 
 Did the componenets assignment, at first I thought everything was going to be super difficult as everything looked complex. But after going through the assignment, it was much easier than expected. The only thing that stopped me from changing the background color were errors I made in making the constants, some typos, and forgetting the "()" in the function. Other than that, I had pretty much everything in place
 
+Did the router assignment and it was nervewracking. Mostly becuase I kept trying to run "npm run dev" and it wouldn't work until I searched it up and it told me that I had to add it to my json script. I spent way too long to figure that out and I wished I looked it up sooner, and I just ended up using "npx vite" instead. Other than that it was smooth sailing and will definitely use it as well as the react stuff in my start up.
+
 ## AWS
 
 My IP address is: 52.201.35.163
