@@ -68,6 +68,13 @@ I also redid some parts of several pages because they weren't going to work that
 
 Also learned that NavLinks doesn't really work within the main tag so all those links are broken and send you to the 404 page. That's probably something I gotta ask a TA about or wait until part 2. I've tried adding NavLink to the main tag but it completely breaks my website so I left them as "a" tags and let them take you to the 404 page. So I added to the start page a warning just in case cause you never know.
 
+Edit:
+
+Deleated deployFiles and replaced it with deployReact. Uploaded my startup to my production environment and everything works just like it did on vite. Also here's the new code to upload to production environment
+```
+./deployReact.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
+```
+
 ## AWS
 
 My IP address is: 52.201.35.163
