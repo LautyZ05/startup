@@ -109,9 +109,13 @@ During this deliverable, I had also changed some of the format and tags from the
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Bundled using Vite** - I did not complete this part of the deliverable.
-- [ ] **Components** - I did not complete this part of the deliverable.
-- [ ] **Router** - I did not complete this part of the deliverable.
+- [x] **Bundled using Vite** - I downloaded all the required modules including vite to my directory and edited the json file to be able to do "npm run dev" and host the file locally.
+- [x] **Components** - I created new directorys for each page of my startup and creating each on their own jsx file. Also created several new files like app.jsx, the new html.index, and index.jsx. As well as replaced the deployFiles.sh with deployReact.sh
+- [x] **Router** - I added routes to my app.jsx to each of the respective pages jsx files. So now only using one page, you can change the content from any of the five pages while keeping the header and footer the same. As well as added a route to a 404 error page.
+
+### Extra
+
+During this assignment, I redid the header and footer so they can be accesble to all the pages. I moved most of the navigation buttons to the header with the title and added my name to the footer with the github link. As well as changed some text like in the start page (used to be index.html) as that was my title page with the title "Connect the Dots" in the middle of it, but since the title is in the header now, I changed the text to say "Welcome Player!" Also added a warning about the buttons not working in the main section. Also renamed startup.css to app.css and did a few changes in there too.
 
 ## 🚀 React part 2: Reactivity deliverable
 
