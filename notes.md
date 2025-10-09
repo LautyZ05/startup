@@ -42,6 +42,22 @@ Also I got to enter into my startup folder in the terminal to be able to upload 
 
 I did the flex assignment and it was way more complicated than I thought at least for me. Wrote down some notes in the CSS section to help quickly remember what some things do.
 
+### Oct 1st, 2025
+
+To deploy startup, use this
+```
+./deployFiles.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
+```
+Also I added 2 more html pages to my startup and worked on my css page
+
+### Oct 3rd, 2025
+
+Did the vite assignment and it was a bit weired trying to change the site's elements. I understood the html part of the jsx file as html calls main.jsx, then that one calls app.jsx. But the css was confusing at first but then just rereading the assignment a bit more carefully I figured out that the app.css wasn't for the entirety of the app but only for things like the images and effects. While the index.css was the actual stylizer of the webpage.
+
+Did the componenets assignment, at first I thought everything was going to be super difficult as everything looked complex. But after going through the assignment, it was much easier than expected. The only thing that stopped me from changing the background color were errors I made in making the constants, some typos, and forgetting the "()" in the function. Other than that, I had pretty much everything in place
+
+Did the router assignment and it was nervewracking. Mostly becuase I kept trying to run "npm run dev" and it wouldn't work until I searched it up and it told me that I had to add it to my json script. I spent way too long to figure that out and I wished I looked it up sooner, and I just ended up using "npx vite" instead. Other than that it was smooth sailing and will definitely use it as well as the react stuff in my start up.
+
 ## AWS
 
 My IP address is: 52.201.35.163
