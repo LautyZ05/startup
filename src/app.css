@@ -79,6 +79,15 @@ header {
     justify-content: center;
 }
 
+.startdiv{
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
     flex: 1;
     display: flex;
