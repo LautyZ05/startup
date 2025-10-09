@@ -16,8 +16,11 @@ export default function App() {
     <BrowserRouter>
     <div className="body">
         <header>
-            <NavLink id="back" href="index.html"><button type="submit" className="btn btn-primary btn-sm">Back</button></NavLink>
-            <h1 id="centered_title">Connect the Dots</h1>
+            <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm">Select</button></NavLink>
+            <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm">Play</button></NavLink>
+            <h1 id="centered_title"><NavLink className="titlecolor" to="">Connect the Dots</NavLink></h1>
+            <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm">About Us</button></NavLink>
+            <NavLink className="front" to="setting"><button type="submit" className="btn btn-primary btn-sm">Settings</button></NavLink>
             <p> </p>
         </header>
         
@@ -31,9 +34,8 @@ export default function App() {
         </Routes>
 
         <footer>
-            <div className="foot"><a href="aboutus.html">About</a></div>        
-            <div className="foot"><a href="setting.html">Settings</a></div>
-            <div className="foot"><a href="https://github.com/LautyZ05/startup?tab=readme-ov-file">GitHub Link</a></div>
+            <div className="foot">Website Created By: Lautaro Zarate</div>
+            <a className="foot" href="https://github.com/LautyZ05/startup"><button type="submit" className="btn btn-primary btn-sm">GitHub</button></a>
         </footer>
     </div>
     </BrowserRouter>
