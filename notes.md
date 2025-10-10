@@ -81,6 +81,8 @@ I completed the javascript array assignment and it wasn't too bad. It's similar 
 
 Just finished the javascript DOM assignment. I found it pretty cool how you can make a whole entire table in JavaScript and the only thing you put in the HTML file is a button with an onclick attribute and that transforms your whole table. While looking at the provided code, I will say that it is a lot of code to be able to produce a simple table but it's pretty cool.
 
+Finished the reactivity assignment and what I learned will be really useful. Reason I say this is because the assignment helped show how to store stuff to local storage, create reactive buttons and text boxes, and how to create variables that you can take from one function to another. This is going to be really useful as in my startup, I want the settings page to change the color of the background to a few options like white, black, dark gray, dark blue, etc. So learning how to make the reactive buttons to change the color and using some information from previous assignments to change the background color will come in very handy.
+
 ## AWS
 
 My IP address is: 52.201.35.163
