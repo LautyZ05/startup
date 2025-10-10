@@ -75,6 +75,10 @@ Deleated deployFiles and replaced it with deployReact. Uploaded my startup to my
 ./deployReact.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
 ```
 
+### Oct 10th, 2025
+
+I completed the javascript array assignment and it wasn't too bad. It's similar to arrays in c++ that I'm learning in cs235 so that's helpful. I was a bit confused on how things some things worked but after testing some things on my own on the codepen, I understood it better. Like at first I didn't get the "i => i > 3" at first but then I understood that it takes each thing in the array and checks it if it's greater than 3. Also was confused on why my code worked differently to the possible solution but then I reread the instructions and got it. I thought you find the length of the array and then test that against the tester but in reality it was each item in the array that you had to test.
+
 ## AWS
 
 My IP address is: 52.201.35.163
