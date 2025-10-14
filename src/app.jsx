@@ -21,7 +21,6 @@ export default function App() {
             <h1 id="centered_title"><NavLink className="titlecolor" to="">Connect the Dots</NavLink></h1>
             <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm">About Us</button></NavLink>
             <NavLink className="front" to="setting"><button type="submit" className="btn btn-primary btn-sm">Settings</button></NavLink>
-            <p> </p>
         </header>
         
         <Routes>
