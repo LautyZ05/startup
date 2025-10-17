@@ -83,6 +83,10 @@ Just finished the javascript DOM assignment. I found it pretty cool how you can 
 
 Finished the reactivity assignment and what I learned will be really useful. Reason I say this is because the assignment helped show how to store stuff to local storage, create reactive buttons and text boxes, and how to create variables that you can take from one function to another. This is going to be really useful as in my startup, I want the settings page to change the color of the background to a few options like white, black, dark gray, dark blue, etc. So learning how to make the reactive buttons to change the color and using some information from previous assignments to change the background color will come in very handy.
 
+### Oct 17th, 2025
+
+I completed the promises assignment and it was interesting. As the provided code shows a pretty cool example of how a webpages content can change without after a single button press by itself. I noticed that the "then, catch, finally" functions work similarly to "if" and "else" statements but more for catching errors than do this instead of this.
+
 ## AWS
 
 My IP address is: 52.201.35.163
