@@ -87,6 +87,8 @@ Finished the reactivity assignment and what I learned will be really useful. Rea
 
 I completed the promises assignment and it was interesting. As the provided code shows a pretty cool example of how a webpages content can change without after a single button press by itself. I noticed that the "then, catch, finally" functions work similarly to "if" and "else" statements but more for catching errors than do this instead of this.
 
+I completed the asyncAwait assignment. At first I was a little confused on why exactly someone would use "await" and the "async try/catch" but after playing around with the copepen and really looking at the example code on github, it started to make sense. The await function essentially holds everything constant until it gets a response from the promise function. Only after that response is recieved it then allows the code to move on or switch to the catch section. It's kind of like a security check online where a website stops you from entering or logging in until you match the pictures or whatever and then lets you continue.
+
 ## AWS
 
 My IP address is: 52.201.35.163
