@@ -89,6 +89,8 @@ I completed the promises assignment and it was interesting. As the provided code
 
 I completed the asyncAwait assignment. At first I was a little confused on why exactly someone would use "await" and the "async try/catch" but after playing around with the copepen and really looking at the example code on github, it started to make sense. The await function essentially holds everything constant until it gets a response from the promise function. Only after that response is recieved it then allows the code to move on or switch to the catch section. It's kind of like a security check online where a website stops you from entering or logging in until you match the pictures or whatever and then lets you continue.
 
+Completed the fetch assignment. The "fetch" function seems really easy to use and I found it really cool how when you pair it up with some "try/catch" code, it can print out so much information. It looks way easier than doing something similar in Python for cs110 or 111. I also liked how the printed information was all organized and had their spaces and things like that instead of starting at the beginning or being put into really long arrays.
+
 ## AWS
 
 My IP address is: 52.201.35.163
