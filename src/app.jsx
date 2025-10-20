@@ -12,19 +12,20 @@ import { Setting } from './setting/setting';
 
 
 export default function App() {
+  const [user, setUser] = React.useState(localStorage.getItem("userName") || null);
   return (
     <BrowserRouter>
     <div className="body">
         <header>
-            <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm">Select</button></NavLink>
-            <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm">Play</button></NavLink>
+            {user && <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm btn-dark">Select</button></NavLink> }
+            {user && <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm btn-dark">Play</button></NavLink> }
             <h1 id="centered_title"><NavLink className="titlecolor" to="">Connect the Dots</NavLink></h1>
-            <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm">About Us</button></NavLink>
-            <NavLink className="front" to="setting"><button type="submit" className="btn btn-primary btn-sm">Settings</button></NavLink>
+            <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm btn-dark">About</button></NavLink>
+            <NavLink className="front" to="setting"><button type="submit" className="btn btn-primary btn-sm btn-dark">Settings</button></NavLink>
         </header>
         
         <Routes>
-            <Route path='/' element={<Start />} exact />
+            <Route path='/' element={<Start setUser={setUser}/>} exact />
             <Route path='/select' element={<Select />} />
             <Route path='/play' element={<Play />} />
             <Route path='/aboutus' element={<AboutUs />} />
@@ -34,7 +35,7 @@ export default function App() {
 
         <footer>
             <div className="foot">Website Created By: Lautaro Zarate</div>
-            <a className="foot" href="https://github.com/LautyZ05/startup"><button type="submit" className="btn btn-primary btn-sm">GitHub</button></a>
+            <a className="foot" href="https://github.com/LautyZ05/startup"><button type="submit" className="btn btn-primary btn-sm btn-dark">GitHub</button></a>
         </footer>
     </div>
     </BrowserRouter>

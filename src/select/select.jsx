@@ -6,16 +6,16 @@ export function Select() {
         <section className="player_s">
             <h2>Guest</h2>
             <div>
-                <a className="options" href="play.html"><button className="btn btn-primary">1 Player</button></a>
-                <a className="options" href="play.html"><button className="btn btn-primary">2 Players</button></a>
+                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">1 Player</button></a>
+                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">2 Players</button></a>
             </div>
         </section>
 
         <section className="player_s">
             <h2>Log In</h2>
             <div>
-                <a className="options" href="play.html"><button className="btn btn-primary">1 Player</button></a>
-                <a className="options" href="play.html"><button className="btn btn-primary">2 Players</button></a>
+                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">1 Player</button></a>
+                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">2 Players</button></a>
             </div>
         </section>
 
