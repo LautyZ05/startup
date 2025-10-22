@@ -4,6 +4,7 @@ export function NotLoggedIn(props) {
   const [userName, setUserName] = React.useState(props.userName);
   
   function LoginUser() {
+    // This will be changed with data service calls
     localStorage.setItem('userName', userName);
     props.onlogin(userName);
   }

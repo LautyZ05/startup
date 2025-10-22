@@ -4,15 +4,8 @@ export function Select() {
   return (
     <main>
         <section className="player_s">
-            <h2>Guest</h2>
-            <div>
-                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">1 Player</button></a>
-                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">2 Players</button></a>
-            </div>
-        </section>
-
-        <section className="player_s">
-            <h2>Log In</h2>
+            <h2>Select Number</h2>
+            <h2>of Players</h2>
             <div>
                 <a className="options" href="play.html"><button className="btn btn-primary btn-dark">1 Player</button></a>
                 <a className="options" href="play.html"><button className="btn btn-primary btn-dark">2 Players</button></a>
