@@ -10,8 +10,17 @@ export function Start({userName, checkState, onChangeState}) {
     <main>
         <div className="div_index">
             <h1 className="h1_index">Welcome Player!</h1>
-            {checkState === CheckState.NotGood && <NotLoggedIn userName={userName} onlogin={() => onChangeState(setUser, CheckState.AllGood)}/>}
-            {checkState === CheckState.AllGood  && <LoggedIn userName={userName} onlogout={() => onChangeState(setUser, CheckState.NotGood)}/>}
+            {checkState === CheckState.NotGood && (
+              <NotLoggedIn 
+                userName={userName} 
+                onlogin={(loginUserName) => {
+                  onChangeState(loginUserName, CheckState.AllGood);
+                }}
+              />
+            )}
+            {checkState === CheckState.AllGood && (
+              <LoggedIn userName={userName} onlogout={() => onChangeState(userName, CheckState.NotGood)}/>
+            )}
 
             <div className="startdiv">
               <div>Warning: None of the buttons in the main area work.</div>

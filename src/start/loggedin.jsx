@@ -1,8 +1,9 @@
 import React from 'react';
 
-export function LoggedIn({userName}) {
+export function LoggedIn(props) {
     function logout() {
         localStorage.removeItem("userName");
+        props.onlogout();
     }
 
   return (

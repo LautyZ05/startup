@@ -38,7 +38,6 @@ export default function App() {
                   onChangeState={(userName, checkState) => {
                     setUserName(userName);
                     setCheckState(checkState)
-                    set
                   }}
                   />} exact />
             <Route path='/select' element={<Select />} />
