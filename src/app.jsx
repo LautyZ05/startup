@@ -9,23 +9,38 @@ import { Select } from './select/select';
 import { Play } from './play/play';
 import { AboutUs } from './about/aboutus';
 import { Setting } from './setting/setting';
+import { CheckState } from './start/checkState';
 
 
 export default function App() {
-  const [user, setUser] = React.useState(localStorage.getItem("userName") || null);
+  const [userName, setUserName] = React.useState(localStorage.getItem("userName") || "");
+  const currentState = userName ? CheckState.AllGood : CheckState.NotGood;
+  const [checkState, setCheckState] = React.useState(currentState);
+
   return (
     <BrowserRouter>
     <div className="body">
         <header>
-            {user && <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm btn-dark">Select</button></NavLink> }
-            {user && <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm btn-dark">Play</button></NavLink> }
+            {userName && <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm btn-dark">Select</button></NavLink> }
+            {userName && <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm btn-dark">Play</button></NavLink> }
             <h1 id="centered_title"><NavLink className="titlecolor" to="">Connect the Dots</NavLink></h1>
             <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm btn-dark">About</button></NavLink>
             <NavLink className="front" to="setting"><button type="submit" className="btn btn-primary btn-sm btn-dark">Settings</button></NavLink>
         </header>
         
         <Routes>
-            <Route path='/' element={<Start setUser={setUser}/>} exact />
+            <Route 
+              path='/' 
+              element={
+                <Start 
+                  userName={userName}
+                  checkState={checkState}
+                  onChangeState={(userName, checkState) => {
+                    setUserName(userName);
+                    setCheckState(checkState)
+                    set
+                  }}
+                  />} exact />
             <Route path='/select' element={<Select />} />
             <Route path='/play' element={<Play />} />
             <Route path='/aboutus' element={<AboutUs />} />

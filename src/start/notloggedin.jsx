@@ -1,10 +1,11 @@
 import React from 'react';
 
-export function Start({setUser}) {
+export function NotLoggedIn({userName}) {
   const [text, setText] = React.useState(' ');
+  
   function LoginUser() {
     localStorage.setItem('userName', text);
-    setUser(text);
+    userName(text);
   }
 
   function textChange(e) {
@@ -15,9 +16,8 @@ export function Start({setUser}) {
   return (
     <main>
         <div className="div_index">
-            <input type='text' onChange={textChange} />
+            <input type='text' onChange={textChange} placeholder='Username'/>
             <button className="btn btn-primary btn-dark" onClick={LoginUser}>Login</button>
-            
         </div>
     </main>
   );
