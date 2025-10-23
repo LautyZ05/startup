@@ -1,8 +1,8 @@
 import React from 'react';
 
-export function Select() {
+export function Select({bgColor, textColor}) {
   return (
-    <main>
+    <main style={{background: bgColor, color:textColor}}>
         <section className="player_s">
             <h2>Select Number</h2>
             <h2>of Players</h2>
@@ -15,13 +15,22 @@ export function Select() {
         <section>
             <h2>Leaderboards</h2>
             <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Wins</th>
-                    <th>Losses</th>
-                    <th>%</th>
-                </tr>
-                
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>enter</th>
+                        <th>enter</th>
+                        <th>enter</th>
+                        <th>enter</th>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>

@@ -16,6 +16,8 @@ export default function App() {
   const [userName, setUserName] = React.useState(localStorage.getItem("userName") || "");
   const currentState = userName ? CheckState.AllGood : CheckState.NotGood;
   const [checkState, setCheckState] = React.useState(currentState);
+  const [bgColor, setBgColor] = React.useState('rgb(240, 240, 240)');
+  const [textColor, setTextColor] = React.useState("black");
 
   return (
     <BrowserRouter>
@@ -35,15 +37,20 @@ export default function App() {
                 <Start 
                   userName={userName}
                   checkState={checkState}
+                  bgColor={bgColor}
+                  textColor={textColor}
                   onChangeState={(userName, checkState) => {
                     setUserName(userName);
                     setCheckState(checkState)
                   }}
                   />} exact />
-            <Route path='/select' element={<Select />} />
-            <Route path='/play' element={<Play />} />
-            <Route path='/aboutus' element={<AboutUs />} />
-            <Route path='/setting' element={<Setting />} />
+            <Route path='/select' element={<Select bgColor={bgColor} textColor={textColor}/>} />
+            <Route path='/play' element={<Play bgColor={bgColor} textColor={textColor}/>} />
+            <Route path='/aboutus' element={<AboutUs bgColor={bgColor} textColor={textColor}/>} />
+            <Route path='/setting' element={<Setting bgColor={bgColor} textColor={textColor} onChangeColor={(bgColor, textColor) => {
+              setBgColor(bgColor)
+              setTextColor(textColor)
+            }}/>} />
             <Route path='*' element={<NotFound />} />
         </Routes>
 

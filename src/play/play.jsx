@@ -1,8 +1,8 @@
 import React from 'react';
 
-export function Play() {
+export function Play({bgColor, textColor}) {
   return (
-    <main>
+    <main style={{ background: bgColor, color: textColor}}>
         <section className="section_play">
             <h3>Score</h3>
             <p>Numbers will go here</p>

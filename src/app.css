@@ -64,12 +64,7 @@ header {
     padding: 0 10px;
 }
 
-.section_play {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .main_play {
     flex: 1;
