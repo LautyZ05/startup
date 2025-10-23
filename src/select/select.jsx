@@ -14,7 +14,6 @@ export function Select() {
 
         <section>
             <h2>Leaderboards</h2>
-            
             <table>
                 <tr>
                     <th>Name</th>
@@ -22,18 +21,7 @@ export function Select() {
                     <th>Losses</th>
                     <th>%</th>
                 </tr>
-                <tr>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                </tr>
-                <tr>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                    <td>[Insert something here]</td>
-                </tr>
+                
             </table>
         </section>
     </main>

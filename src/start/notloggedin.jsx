@@ -18,7 +18,7 @@ export function NotLoggedIn(props) {
     <main>
         <div className="div_index">
             <input type='text' value={userName} onChange={textChange} placeholder='Username'/>
-            <button className="btn btn-primary btn-dark" onClick={LoginUser}>Login</button>
+            <button className="btn btn-primary btn-dark" onClick={LoginUser} disabled={!userName}>Login</button>
         </div>
     </main>
   );
