@@ -91,6 +91,10 @@ I completed the asyncAwait assignment. At first I was a little confused on why e
 
 Completed the fetch assignment. The "fetch" function seems really easy to use and I found it really cool how when you pair it up with some "try/catch" code, it can print out so much information. It looks way easier than doing something similar in Python for cs110 or 111. I also liked how the printed information was all organized and had their spaces and things like that instead of starting at the beginning or being put into really long arrays.
 
+### Oct 24th, 2025
+
+I completed the express assignment. It's pretty cool how the different things after the url (like the "/provo" or the "/store/orem", I don't know what it's called) show different things when you enter them into the terminal with curl. Also interesting that we gotta use node instead of the live server extension which I will need to get used to but I'm going to guess it's a lot better to use node intstead.
+
 ## AWS
 
 My IP address is: 52.201.35.163
