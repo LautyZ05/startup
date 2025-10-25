@@ -121,8 +121,12 @@ During this assignment, I redid the header and footer so they can be accesble to
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **All functionality implemented or mocked out** - I did not complete this part of the deliverable.
-- [ ] **Hooks** - I did not complete this part of the deliverable.
+- [x] **All functionality implemented or mocked out** - I marked some spots in my code where they will be replaced with 3rd party servers. For example, like the scoreboard will recieve information from 3rd party service to display names, wins, losses, and win rate percentages instead of reading from local storage.
+- [ ] **Hooks** - I mainly used the "useEffect" hook to get my code working in several different pages. As well as the "useState" hook for several different parts of my code. Like the background color uses the "useState" hook to automatically use the preselected RGB colors until user decides to change it.
+
+### Extra
+
+During this assignment, I also created many different css pages for several different parts of my code like play.css, select.css, and more. I did this to customize the look of my code a bit better rather than just stuffing everything into my app.css. I also started to work on the play.jsx as creating the board but still a bit unsure of how to make the game actually work so that is still under construction. So I added a temporary button to select.jsx to save a simple example of what the scoreboard will look like by storing the example to local storage.
 
 ## 🚀 Service deliverable
 
