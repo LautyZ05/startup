@@ -95,6 +95,8 @@ Completed the fetch assignment. The "fetch" function seems really easy to use an
 
 I completed the express assignment. It's pretty cool how the different things after the url (like the "/provo" or the "/store/orem", I don't know what it's called) show different things when you enter them into the terminal with curl. Also interesting that we gotta use node instead of the live server extension which I will need to get used to but I'm going to guess it's a lot better to use node intstead.
 
+I also somewhat finished my react part 2 today. I needed a bit extra time as I took way to long trying to figure out how the login feature works until I figured it out a few days ago. But by then I was a bit late to everything else so I had to turn it in late.
+
 ## AWS
 
 My IP address is: 52.201.35.163
