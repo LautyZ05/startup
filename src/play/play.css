@@ -1,0 +1,19 @@
+#board {
+    background-color: blue;
+    border: 10px solid cornflowerblue;
+
+    display: grid;
+    grid-template-columns: repeat(7, 90px);
+    grid-template-rows: repeat(6, 90px);
+    justify-content: center;
+    
+    width: 650px;
+    height: 560px;
+    margin: 0 auto;
+}
+
+.circle {
+    border: 10px solid blue;
+    background-color: white;
+    border-radius: 50%;
+}
