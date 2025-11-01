@@ -97,6 +97,10 @@ I completed the express assignment. It's pretty cool how the different things af
 
 I also somewhat finished my react part 2 today. I needed a bit extra time as I took way to long trying to figure out how the login feature works until I figured it out a few days ago. But by then I was a bit late to everything else so I had to turn it in late.
 
+### Oct 31st, 2025
+
+I completed the data service assignment and it was pretty cool. First, I really liked the fact that there was a video so the assignment didn't take as long as it probably would have which is nice. Second, I was a bit lost while following along but I think I'm going to understand it better once I start messing around with it with my startup. I find it really cool how the program didn't even finish and it had already uploaded the database to the online server which is pretty cool. Hopefully I don't overcomplicate things and make it much harder for myself lol.
+
 ## AWS
 
 My IP address is: 52.201.35.163
