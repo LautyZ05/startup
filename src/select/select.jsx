@@ -1,15 +1,16 @@
 import React from 'react';
 import "./select.css";
 
-export function Select({bgColor, textColor}) {
+export function Select({bgColor, textColor, userName}) {
     const [scores, setScores] = React.useState([]);
 
     React.useEffect(() => {
         // This will be replaced with a 3rd party service call
-        const scoresText = localStorage.getItem("scoreBoard")
-        if (scoresText) {
-            setScores(JSON.parse(scoresText));
-        }
+        fetch('/api/scoreboard')
+            .then((response) => response.json())
+            .then((scores) => {
+                setScores(scores);
+            });
     }, []);
 
     const rows = [];
@@ -34,8 +35,12 @@ export function Select({bgColor, textColor}) {
     }
 
     //temp code below until I can get the main game working
-    function settheScores() {
-        localStorage.setItem('scoreBoard', JSON.stringify([{"name":"bob","wins":5,"loss":4}]));
+    async function settheScores() {
+        await fetch("/api/scores", {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ name: userName, wins: 5, loss: 4 }),
+        });
   }
 
   return (
@@ -50,7 +55,8 @@ export function Select({bgColor, textColor}) {
         </section>
 
         <div className='div_index'>
-            <div>press button below to test scoreboard as the main game isn't finished</div>
+            <div>press button below and refresh page to test</div>
+            <div>scoreboard as the main game isn't finished</div>
             <button className="btn btn-primary btn-dark" onClick={settheScores}>Set Score</button>
         </div>
 

@@ -44,7 +44,7 @@ export default function App() {
                     setCheckState(checkState)
                   }}
                   />} exact />
-            <Route path='/select' element={<Select bgColor={bgColor} textColor={textColor}/>} />
+            <Route path='/select' element={<Select bgColor={bgColor} textColor={textColor} userName={userName}/>} />
             <Route path='/play' element={<Play bgColor={bgColor} textColor={textColor}/>} />
             <Route path='/aboutus' element={<AboutUs bgColor={bgColor} textColor={textColor}/>} />
             <Route path='/setting' element={<Setting bgColor={bgColor} textColor={textColor} onChangeColor={(bgColor, textColor) => {

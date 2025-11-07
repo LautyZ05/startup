@@ -2,8 +2,16 @@ import React from 'react';
 
 export function LoggedIn(props) {
     function logout() {
-        localStorage.removeItem("userName");
-        props.onlogout();
+      fetch(`/api/auth/logout`, {
+        method: "delete",
+      })
+        .catch(() => {
+
+        })
+        .finally(() => {
+          localStorage.removeItem("userName");
+          props.onlogout();
+        });
     }
 
   return (

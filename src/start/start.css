@@ -1,0 +1,13 @@
+.button_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.buttonDiv {
+    padding: 0 10px;
+}
