@@ -101,6 +101,13 @@ I also somewhat finished my react part 2 today. I needed a bit extra time as I t
 
 I completed the data service assignment and it was pretty cool. First, I really liked the fact that there was a video so the assignment didn't take as long as it probably would have which is nice. Second, I was a bit lost while following along but I think I'm going to understand it better once I start messing around with it with my startup. I find it really cool how the program didn't even finish and it had already uploaded the database to the online server which is pretty cool. Hopefully I don't overcomplicate things and make it much harder for myself lol.
 
+### Nov 7th, 2025
+
+To deploy startup with Service, use this
+```
+./deployService.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
+```
+
 ## AWS
 
 My IP address is: 52.201.35.163
