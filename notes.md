@@ -108,6 +108,8 @@ To deploy startup with Service, use this
 ./deployService.sh -k ~/Desktop/startup260.pem -h connectthedots.click -s startup
 ```
 
+Finally finsihed the Startup Service deliverable and it was a bit painful. After finishing it, everything that I've learned makes more sense but working on it was pain. One little mistake caused my whole program to not work and throw error of string not matching pattern or whatever. I even asked a TA and they did help me with some stuff but sadly couldn't help with the main problem. But after several hours of trying to figure out the little problem, I found it. I accidently wrote ".put" instead of ".post" and that made everything work.
+
 ## AWS
 
 My IP address is: 52.201.35.163
