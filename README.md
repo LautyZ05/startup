@@ -122,7 +122,7 @@ During this assignment, I redid the header and footer so they can be accesble to
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
 - [x] **All functionality implemented or mocked out** - I marked some spots in my code where they will be replaced with 3rd party servers. For example, like the scoreboard will recieve information from 3rd party service to display names, wins, losses, and win rate percentages instead of reading from local storage.
-- [ ] **Hooks** - I mainly used the "useEffect" hook to get my code working in several different pages. As well as the "useState" hook for several different parts of my code. Like the background color uses the "useState" hook to automatically use the preselected RGB colors until user decides to change it.
+- [x] **Hooks** - I mainly used the "useEffect" hook to get my code working in several different pages. As well as the "useState" hook for several different parts of my code. Like the background color uses the "useState" hook to automatically use the preselected RGB colors until user decides to change it.
 
 ### Extra
 
@@ -132,12 +132,16 @@ During this assignment, I also created many different css pages for several diff
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Node.js/Express HTTP service** - I did not complete this part of the deliverable.
-- [ ] **Static middleware for frontend** - I did not complete this part of the deliverable.
-- [ ] **Calls to third party endpoints** - I did not complete this part of the deliverable.
-- [ ] **Backend service endpoints** - I did not complete this part of the deliverable.
-- [ ] **Frontend calls service endpoints** - I did not complete this part of the deliverable.
-- [ ] **Supports registration, login, logout, and restricted endpoint** - I did not complete this part of the deliverable.
+- [x] **Node.js/Express HTTP service** - I'm 99.9% I completed this as I mainly used Node in the terminal rather than vscode and that worked fine after installing unless I messed up spelling "node index.js". I also used express at the top of my service index.js.
+- [x] **Static middleware for frontend** - I added this to my index.js in my service directory.
+- [x] **Calls to third party endpoints** - I specifcally added this to my aboutus.jsx file to pop up a random quote from everytime the pages is loaded from the same service that simon uses.
+- [x] **Backend service endpoints** - I added my endpoints for creating,logging in, logging out user as well as retrieving and uploading scoreboard information to my service index.js.
+- [x] **Frontend calls service endpoints** - I added frontend calls to several different pages. Added to loggegin.jsx and notloggedin.jsx to control wether the user is logged in or not. I also added calls to select.jsx to retrieve scoreboard information as well as changed the temporary code to upload scores to test out the scoreboard for now until I can get my game to work.
+- [x] **Supports registration, login, logout, and restricted endpoint** - Program is able to create user, log the user in, and logout. It does this by storing the user's informatioin in a simple list for now which resets everytime node resets.
+
+### Extra
+
+During this assignment, I added several new css pages to help with the formatting of some of the new items like start.css and aboutus.css. As well as added a new textbox to start.jsx so now user can input a password and program can use it to check if it's the correct password associated with the userName. I also added quotes to aboutus.jsx because why not, who doesn't love a random quote. Probably the biggest addition was the service directory with it's json files and the index.js with all the backed service calls.
 
 
 ## 🚀 DB deliverable
