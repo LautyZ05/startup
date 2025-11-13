@@ -110,6 +110,12 @@ To deploy startup with Service, use this
 
 Finally finsihed the Startup Service deliverable and it was a bit painful. After finishing it, everything that I've learned makes more sense but working on it was pain. One little mistake caused my whole program to not work and throw error of string not matching pattern or whatever. I even asked a TA and they did help me with some stuff but sadly couldn't help with the main problem. But after several hours of trying to figure out the little problem, I found it. I accidently wrote ".put" instead of ".post" and that made everything work.
 
+### Nov 12th, 2025
+
+I finished ther mongoDB deliverable and everything thankfully works. Took me forever to figure out how to fix the problem cause the require() thing wasn't being recognized as a ES modules or something like that so I took a look at the discord and someone from last semester had the same problem so thanks to them I was able to fix mine. Then I found out I couldn't just do export function..., instead I had to put all my exporting function stuff in module.export at the bottom like in the simon code. I then kept running my code through vite using "npm run dev" and it wouldn't work. Until I remembered that I needed to run Node, I felt a bit dumb as I was litteraly using it earlier in vscode to figure out the ES module problem lol.
+
+This is actually from a day or two ago but I've finally been able to start making the connect four game to somewhat work. It, ummmm, doesn't tell you when you won or not as I haven't coded that part in but you can finally put the chips in and fill up the board which is pretty cool. It automatically starts with red chips cause yes and everytime you place the chip, it switches to the other color. Also it doesn't overlap colors and once you fill up a column it won't let you place anymore chips. Still trying to figure out how to code the win condition, I have some ideas but I'm not too sure. I don't want to make my file too big but I'm also aren't too sure if I should have the win condition function be called from a different file. But at least I'm one step closer to finishing that.
+
 ## AWS
 
 My IP address is: 52.201.35.163
