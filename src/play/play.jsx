@@ -15,32 +15,11 @@ export function Play({bgColor, textColor}) {
   }
 
 
-  function checkCircleAndBelow(divID) {
-    let myDiv = document.getElementById(divID);
-    let splitedID = divID.split("/");
-    console.log(splitedID);
-    splitedID[0] = parseInt(splitedID[0]) + 5;
-    console.log(splitedID);
-    let followingColor = window.getComputedStyle(myDiv).backgroundColor;
-    console.log(followingColor);
-    let belowDiv = document.getElementById(JSON.stringify(splitedID[0]) + "/" + splitedID[1]);
-    let belowColor = window.getComputedStyle(belowDiv).backgroundColor;
-    console.log(belowColor + " below color");
-    if (followingColor == belowColor) {
-      console.log("same");
-      belowDiv.style.backgroundColor = currPlayer;
-    }
-  }
-
-
   function checkCircleBelow(divID) {
     let key = false;
     let myDiv = document.getElementById(divID);
     let splitedID = divID.split("/");
     splitedID[0] = parseInt(splitedID[0]) + 5;
-    let belowDiv = document.getElementById(JSON.stringify(splitedID[0]) + "/" + splitedID[1]);
-    let belowColor = window.getComputedStyle(belowDiv).backgroundColor;
-    let currentDivColor = window.getComputedStyle(myDiv).backgroundColor;
 
     while (key == false) {
       let belowDiv = document.getElementById(JSON.stringify(splitedID[0]) + "/" + splitedID[1]);
@@ -78,7 +57,7 @@ export function Play({bgColor, textColor}) {
     <main style={{ background: bgColor, color: textColor}}>
         <section className="section_play">
             <div id="playerColorBox"><h3 style={{ color: currPlayer }}>Current Player</h3></div>
-            <div>To place coin, place it at the top circle</div>
+            <div>To drop coin, click the circles at the top row</div>
             <div>Have Fun! :)</div>
             <div>Message: Still working on it</div>
         </section>

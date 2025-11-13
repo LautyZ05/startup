@@ -6,6 +6,7 @@ const express = require("express");
 const uuid = require("uuid");
 const app = express();
 
+const db = require("./databaseMongo.js");
 
 app.use(express.json());
 app.use(cookieParser());
@@ -13,10 +14,6 @@ app.use(express.static('public'));
 
 var apiRoute = express.Router();
 app.use(`/api`, apiRoute);
-
-
-let users = [];
-let scores = [];
 
 
 function setAuthCookie(res, user) {
@@ -48,6 +45,7 @@ apiRoute.post("/auth/login", async (req, res) => {
     if (user) {
       if (await bcrypt.compare(req.body.password, user.password)) {
         user.token = uuid.v4();
+        await db.updateUser(user);
         setAuthCookie(res, user.token);
         res.send({ email: user.email });
         return;
@@ -82,6 +80,7 @@ apiRoute.delete("/auth/logout", async (req, res) => {
     const user = await getUser("token", token);
     if (user) {
         delete user.token;
+        db.updateUser(user);
     }
     res.clearCookie("token");
     res.status(204).end();
@@ -89,14 +88,21 @@ apiRoute.delete("/auth/logout", async (req, res) => {
 
 
 //Get data for scoreboard
-apiRoute.get("/scoreboard", (_req, res) => {
+apiRoute.get("/scoreboard", async (_req, res) => {
+  const scores = await db.getScores();
   res.send(scores);
 });
 
 
+
+async function updateNewScore(score) {
+  await db.addNewScore(score);
+  return db.getScores();
+}
+
 //upload scores
-apiRoute.post("/scores", (req, res) => {
-  scores.push(req.body);
+apiRoute.post("/scores", async (req, res) => {
+  const scores = updateNewScore(req.body);
   res.send(scores);
 });
 
@@ -104,7 +110,10 @@ apiRoute.post("/scores", (req, res) => {
 async function getUser(field, value) {
     if (!value) return null;
 
-    return users.find((u) => u[field] === value);
+    if (field === "token") {
+      return db.getToken(value);
+    }
+    return db.getUser(value);
 }
 
 
@@ -127,7 +136,7 @@ async function createUser(email, password) {
     token: uuid.v4(),
   };
 
-  users.push(user);
+  await db.addNewUser(user);
 
   return user;
 }
