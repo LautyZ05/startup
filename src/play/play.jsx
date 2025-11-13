@@ -59,7 +59,7 @@ export function Play({bgColor, textColor}) {
             <div id="playerColorBox"><h3 style={{ color: currPlayer }}>Current Player</h3></div>
             <div>To drop coin, click the circles at the top row</div>
             <div>Have Fun! :)</div>
-            <div>Message: Still working on it</div>
+            <div>Message: Still working on it. You can fill up the board but still working on checking win conditions!</div>
         </section>
         <div id='board'>
           <div className='circle' id="0/0" onClick={() => changeColor("0/0")}></div>
