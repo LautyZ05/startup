@@ -148,8 +148,12 @@ During this assignment, I added several new css pages to help with the formattin
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Stores data in MongoDB** - I did not complete this part of the deliverable.
-- [ ] **Stores credentials in MongoDB** - I did not complete this part of the deliverable.
+- [x] **Stores data in MongoDB** - My website stores the user's scores in mongoDB and I am able to view it after refreshing the mongo page.
+- [x] **Stores credentials in MongoDB** - User's are able to upload their credentials and I can view their usernames in mongo but their passwords are totally not viewable on my end which is good.
+
+### Extra
+
+During this assignment, I had finally figured out how to place the chips onto the board and have the chips automatically switch colors each time a chip is placed (ex. when you place a red chip, it automatically switches to yellow). When you click on the play tab, it automatically starts with the red chips and from there it switches. You can fill up the whole table and once you fill up a column, no more chips can be placed in that column. Still working on it so nothing happens when someone actually connects four but have some ideas on how to implament that.
 
 ## 🚀 WebSocket deliverable
 
