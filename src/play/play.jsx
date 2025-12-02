@@ -36,7 +36,85 @@ export function Play({bgColor, textColor}) {
   }
 
 
+  const [winner, setWinner] = React.useState("None");
+
+  function declarWinner(color) {
+        if (color == "red") {
+            setWinner("red")
+        }
+        if (color == "yellow") {
+            setWinner("Yellow")
+        }
+  }
+
+
+
+
+  function getColor(divID) {
+        let myDiv = document.getElementById(divID);
+        let divColor = window.getComputedStyle(myDiv).backgroundColor;
+        return divColor;
+  }
+
+
+  function checkWin() {
+        let currentColor = "rgb(255, 0, 0)"
+
+        if (currPlayer == "yellow") {
+            currentColor = "rgb(255, 255, 0)"
+        }
+
+        var max_row = 6
+        var max_column = 7
+
+        //Checks for horizontal win
+        for (let row = 0; row < max_row; row++) {
+            for (let column = 0; column < max_column-3; column++) {
+                if (getColor(JSON.stringify(row) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row) + "/" + JSON.stringify(column+1)) == currentColor && getColor(JSON.stringify(row) + "/" + JSON.stringify(column+2)) == currentColor && getColor(JSON.stringify(row) + "/" + JSON.stringify(column+3)) == currentColor) {
+                    declarWinner(currPlayer);
+                    return;
+                }
+            }
+        }
+
+        //Checks for vertical win
+        for (let column = 0; column < max_column; column++) {
+            for (let row = 0; row < max_row-3; row ++) {
+                if (getColor(JSON.stringify(row) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row+1) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row+2) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row+3) + "/" + JSON.stringify(column)) == currentColor) {
+                    declarWinner(currPlayer);
+                    return;
+                }
+            }
+        }
+
+        //Checks for diagonal win like \
+        for (let row = 0; row < max_row-3; row++) {
+            for (let column = 0; column < max_column-3; column++) {
+                if (getColor(JSON.stringify(row) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row+1) + "/" + JSON.stringify(column+1)) == currentColor && getColor(JSON.stringify(row+2) + "/" + JSON.stringify(column+2)) == currentColor && getColor(JSON.stringify(row+3) + "/" + JSON.stringify(column+3)) == currentColor) {
+                    declarWinner(currPlayer);
+                    return;
+                }
+            }
+        }
+
+        //Checks for diagonal win like /
+        for (let row = 3; row < max_row; row++) {
+            for (let column = 0; column < max_column-3; column++) {
+                if (getColor(JSON.stringify(row) + "/" + JSON.stringify(column)) == currentColor && getColor(JSON.stringify(row-1) + "/" + JSON.stringify(column+1)) == currentColor && getColor(JSON.stringify(row-2) + "/" + JSON.stringify(column+2)) == currentColor && getColor(JSON.stringify(row-3) + "/" + JSON.stringify(column+3)) == currentColor) {
+                    declarWinner(currPlayer);
+                    return;
+                }
+            }
+        }
+  }
+
+
   function changeColor(divID) {
+    if (winner != "None") {
+      console.log("Winner is chosen");
+      return;
+    }
+
     let myDiv = document.getElementById(divID);
     let divColor = window.getComputedStyle(myDiv).backgroundColor;
     
@@ -49,6 +127,7 @@ export function Play({bgColor, textColor}) {
     else{
       checkCircleBelow(divID);
       changePlayerColor();
+      checkWin();
     }
   }
 
@@ -61,6 +140,7 @@ export function Play({bgColor, textColor}) {
             <div>Have Fun! :)</div>
             <div>Message: Still working on it. You can fill up the board but still working on checking win conditions!</div>
         </section>
+        {/* DivID works by Row / Column */}
         <div id='board'>
           <div className='circle' id="0/0" onClick={() => changeColor("0/0")}></div>
           <div className='circle' id="0/1" onClick={() => changeColor("0/1")}></div>
