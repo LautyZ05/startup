@@ -45,7 +45,7 @@ export default function App() {
                   }}
                   />} exact />
             <Route path='/select' element={<Select bgColor={bgColor} textColor={textColor} userName={userName}/>} />
-            <Route path='/play' element={<Play bgColor={bgColor} textColor={textColor}/>} />
+            <Route path='/play' element={<Play bgColor={bgColor} textColor={textColor} userName={userName}/>} />
             <Route path='/aboutus' element={<AboutUs bgColor={bgColor} textColor={textColor}/>} />
             <Route path='/setting' element={<Setting bgColor={bgColor} textColor={textColor} onChangeColor={(bgColor, textColor) => {
               setBgColor(bgColor)

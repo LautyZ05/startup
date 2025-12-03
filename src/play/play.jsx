@@ -1,8 +1,19 @@
 import React from 'react';
 import "./play.css";
 
-export function Play({bgColor, textColor}) {
+export function Play({bgColor, textColor, userName}) {
   const [currPlayer, setCurrPlayer] = React.useState("red");
+  const [scores, setScores] = React.useState([]);
+  const [winner, setWinner] = React.useState("None");
+  const [winColor, setWinColor] = React.useState("None");
+  
+  React.useEffect(() => {
+      fetch('/api/scoreboard')
+          .then((response) => response.json())
+          .then((scores) => {
+              setScores(scores);
+          });
+  }, []);
 
 
   function changePlayerColor() {
@@ -36,19 +47,41 @@ export function Play({bgColor, textColor}) {
   }
 
 
-  const [winner, setWinner] = React.useState("None");
+  async function settheScores(win_num, losses) {
+        await fetch("/api/scores", {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ name: userName, wins: win_num, loss: losses }),
+        });
+    }
+
 
   function declarWinner(color) {
-        if (color == "red") {
-            setWinner("red")
+    let curr_wins = 0;
+    let curr_loss = 0;
+
+    if (scores.length) {
+      for (const [i, score] of scores.entries()) {
+        let curr_name = score.name;
+        if (curr_name == userName) {
+          curr_wins = score.wins
+          curr_loss = score.loss
         }
-        if (color == "yellow") {
-            setWinner("Yellow")
-        }
+      }
+    }
+
+    if (color == "red") {
+        setWinner("red")
+        setWinColor("Red")
+        settheScores(curr_wins+1, curr_loss);
+    }
+    if (color == "yellow") {
+        setWinner("yellow")
+        setWinColor("Yellow")
+        settheScores(curr_wins, curr_loss+1);
+    }
+    document.getElementById("invis").style.display = 'flex';
   }
-
-
-
 
   function getColor(divID) {
         let myDiv = document.getElementById(divID);
@@ -138,7 +171,7 @@ export function Play({bgColor, textColor}) {
             <div id="playerColorBox"><h3 style={{ color: currPlayer }}>Current Player</h3></div>
             <div>To drop coin, click the circles at the top row</div>
             <div>Have Fun! :)</div>
-            <div>Message: Still working on it. You can fill up the board but still working on checking win conditions!</div>
+            <div id="invis">{winColor} has Won!!!</div>
         </section>
         {/* DivID works by Row / Column */}
         <div id='board'>

@@ -41,7 +41,7 @@ export function Select({bgColor, textColor, userName}) {
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ name: userName, wins: 5, loss: 4 }),
         });
-  }
+    }
 
   return (
     <main style={{background: bgColor, color:textColor}}>

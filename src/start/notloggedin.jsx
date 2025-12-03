@@ -22,7 +22,7 @@ export function NotLoggedIn(props) {
   
   async function loginOrCreateUser(endpoint) {
     const response = await fetch(endpoint, {
-      method: "post",
+      method: "POST",
       body: JSON.stringify({ email: userName, password: password }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",

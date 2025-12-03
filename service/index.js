@@ -28,7 +28,7 @@ function setAuthCookie(res, user) {
 
 //create a user
 apiRoute.post("/auth/create", async (req, res) => {
-   if (await getUser("email", req.body.email)) {
+   if (await getUserName("email", req.body.email)) {
     res.status(409).send({ msg: "User exists already" });
    } 
    else {
@@ -41,7 +41,7 @@ apiRoute.post("/auth/create", async (req, res) => {
 
 //logging in
 apiRoute.post("/auth/login", async (req, res) => {
-    const user = await getUser("email", req.body.email);
+    const user = await getUserName("email", req.body.email);
     if (user) {
       if (await bcrypt.compare(req.body.password, user.password)) {
         user.token = uuid.v4();
@@ -60,7 +60,7 @@ apiRoute.post("/auth/login", async (req, res) => {
 //get a user
 apiRoute.get('/user/me', async (req, res) => {
   const token = req.cookies['token'];
-  const user = await getUser('token', token);
+  const user = await getUserName('token', token);
   if (user) {
     res.send({ email: user.email });
   } else {
@@ -77,7 +77,7 @@ function clearAuthCookies(res, user) {
 
 apiRoute.delete("/auth/logout", async (req, res) => {
     const token = req.cookies["token"];
-    const user = await getUser("token", token);
+    const user = await getUserName("token", token);
     if (user) {
         delete user.token;
         db.updateUser(user);
@@ -107,11 +107,11 @@ apiRoute.post("/scores", async (req, res) => {
 });
 
 
-async function getUser(field, value) {
+async function getUserName(field, value) {
     if (!value) return null;
 
     if (field === "token") {
-      return db.getToken(value);
+      return db.getUserByToken(value);
     }
     return db.getUser(value);
 }

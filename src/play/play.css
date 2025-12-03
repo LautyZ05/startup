@@ -32,3 +32,8 @@
 #zero_zero {
     background-color: pink;
 }
+
+#invis {
+    display: none; 
+    font-size: 30px;
+}
