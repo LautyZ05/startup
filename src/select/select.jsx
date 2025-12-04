@@ -1,17 +1,27 @@
 import React from 'react';
 import "./select.css";
+import { winStatus, messages } from './winLossNotes';
 
 export function Select({bgColor, textColor, userName}) {
     const [scores, setScores] = React.useState([]);
+    const [events, setEvents] = React.useState([]);
 
     React.useEffect(() => {
-        // This will be replaced with a 3rd party service call
         fetch('/api/scoreboard')
             .then((response) => response.json())
             .then((scores) => {
                 setScores(scores);
             });
     }, []);
+
+    React.useEffect(() => {
+        messages.addHandler(handleMessages);
+
+        return () => {
+            messages.removeHandler(handleMessages);
+        };
+    });
+
 
     const rows = [];
     if (scores.length) {
@@ -34,34 +44,47 @@ export function Select({bgColor, textColor, userName}) {
         );
     }
 
-    //temp code below until I can get the main game working
-    async function settheScores() {
-        await fetch("/api/scores", {
-            method: "POST",
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ name: userName, wins: 5, loss: 4 }),
-        });
+
+    function handleMessages(event) {
+        setEvents([...events, event]);
     }
+
+
+    function displayMessages() {
+        const messageList = [];
+        for (const [i, event] of events.entries()) {
+            let message = "unknown";
+            if (event.type === winStatus.Win) {
+                message = " has won a game!"
+            }
+            else if (event.type === winStatus.Loss) {
+                message = " has lost a game."
+            }
+            else if (event.type === winStatus.System) {
+                message = event.value.msg;
+            }
+
+            messageList.push(
+                <div key={i} className="messagesDiv">
+                    <span className={"playerMessage"}>{event.from}</span>
+                    {message}
+                </div>
+            );
+        }
+        return messageList;
+    }
+
 
   return (
     <main style={{background: bgColor, color:textColor}}>
-        <section className="player_s">
-            <h2>Select Number</h2>
-            <h2>of Players</h2>
-            <div>
-                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">1 Player</button></a>
-                <a className="options" href="play.html"><button className="btn btn-primary btn-dark">2 Players</button></a>
-            </div>
-        </section>
 
         <div className='div_index'>
-            <div>press button below and refresh page to test</div>
-            <div>scoreboard as the main game isn't finished</div>
-            <button className="btn btn-primary btn-dark" onClick={settheScores}>Set Score</button>
+            <h3>Notifications for {userName} below:</h3>
+            <div>{displayMessages()}</div>
         </div>
 
         <section>
-            <h2>Leaderboards</h2>
+            <h2>Scoreboard</h2>
             <table>
                 <thead>
                     <tr>

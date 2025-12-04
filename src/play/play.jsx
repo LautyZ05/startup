@@ -1,5 +1,6 @@
 import React from 'react';
 import "./play.css";
+import { winStatus, messages } from '../select/winLossNotes';
 
 export function Play({bgColor, textColor, userName}) {
   const [currPlayer, setCurrPlayer] = React.useState("red");
@@ -74,11 +75,13 @@ export function Play({bgColor, textColor, userName}) {
         setWinner("red")
         setWinColor("Red")
         settheScores(curr_wins+1, curr_loss);
+        messages.sendMessage(userName, winStatus.Win, {});
     }
     if (color == "yellow") {
         setWinner("yellow")
         setWinColor("Yellow")
         settheScores(curr_wins, curr_loss+1);
+        messages.sendMessage(userName, winStatus.Loss, {});
     }
     document.getElementById("invis").style.display = 'flex';
   }

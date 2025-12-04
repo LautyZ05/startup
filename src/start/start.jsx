@@ -22,11 +22,7 @@ export function Start({userName, checkState, onChangeState, bgColor, textColor})
               <LoggedIn userName={userName} onlogout={() => onChangeState(userName, CheckState.NotGood)}/>
             )}
 
-            <div className="startdiv">
-              <div>Warning: None of the buttons in the main area work.</div>
-              <div>They will send you to error page 404.</div>
-              <div>Use navigation buttons in header to go through the pages :)</div>
-            </div>
+            
         </div>
     </main>
   );

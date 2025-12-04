@@ -23,7 +23,7 @@ export default function App() {
     <BrowserRouter>
     <div className="body">
         <header>
-            {checkState === CheckState.AllGood && <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm btn-dark">Select</button></NavLink> }
+            {checkState === CheckState.AllGood && <NavLink className="back" to="select"><button type="submit" className="btn btn-primary btn-sm btn-dark">Scores</button></NavLink> }
             {checkState === CheckState.AllGood && <NavLink className="back" to="play"><button type="submit" className="btn btn-primary btn-sm btn-dark">Play</button></NavLink> }
             <h1 id="centered_title"><NavLink className="titlecolor" to="">Connect the Dots</NavLink></h1>
             <NavLink className="front" to="aboutus"><button type="submit" className="btn btn-primary btn-sm btn-dark">About</button></NavLink>

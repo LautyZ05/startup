@@ -8,6 +8,8 @@ const app = express();
 
 const db = require("./databaseMongo.js");
 
+const { peerProxy } = require('./peerProxy.js');
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('public'));
@@ -141,6 +143,9 @@ async function createUser(email, password) {
   return user;
 }
 
-app.listen(port, () => {
+
+const listening = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+peerProxy(listening);
