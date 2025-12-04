@@ -2,21 +2,9 @@
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. hopefully this description has been modified. will this change work again? Test again. test one more time.
-
 This will be a simple application where anyone who has accses to it can play a simple game of Connect 4 anywhere they want. They can either play with themselves against a computer that will randomly place down their dots or against a friend in person with each person taking turns. You can either play as a guest or log in with your information to keep track of you and your friends' scores as well.
 
-
-> [!NOTE]
->  This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
-
-> [!NOTE]
->  If you are not familiar with Markdown then you should review the [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
-
 ## 🚀 Specification Deliverable
-
-> [!NOTE]
->  Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
@@ -53,11 +41,11 @@ sequenceDiagram
 
 ### Key features
 
-- Ability to play Connect 4 as a guest or logged in
-- Single play or multiplay
+- Ability to play Connect 4 when logged in
 - Secure login
 - Updated scoreboards with correct scores (wins/losses/percentage)
-- Controls for easy dot selection
+- Easy controls to place dots
+- See notifications of when players win/lose
 
 ### Technologies
 
@@ -159,8 +147,13 @@ During this assignment, I had finally figured out how to place the chips onto th
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Backend listens for WebSocket connection** - I did not complete this part of the deliverable.
-- [ ] **Frontend makes WebSocket connection** - I did not complete this part of the deliverable.
-- [ ] **Data sent over WebSocket connection** - I did not complete this part of the deliverable.
-- [ ] **WebSocket data displayed** - I did not complete this part of the deliverable.
-- [ ] **Application is fully functional** - I did not complete this part of the deliverable.
+- [x] **Backend listens for WebSocket connection** - Created a new file peerProxy (same nams as simon cause it was easy to understand) that handles the backend connections
+- [x] **Frontend makes WebSocket connection** - Created a new file call winLossNotes to handle all the frontend connection
+- [x] **Data sent over WebSocket connection** - When a player finishes a game and program is going through the win conditions and everything, it will also send wether the player has won (red dots) or lost (yellow dots) the game.
+- [x] **WebSocket data displayed** - Notifications can be seen in the Scores tab above the Scoreboard as I thought it would be a good place for it as the user can see when another play has finished and quickly refresh to check new score.
+- [x] **Application is fully functional** - Application is done and user can play connect 4 easily. Hopefully there isn't any bugs lol!
+
+### Extra
+
+During this assignment, I had finished up the code for checking the win conditions in play.jsx so once someone has won or lost the game, no more chips can be placed on the board, displays some text saying which color wins, and sends over websocket data saying either win or loss. Also cleaned up several different files to make website look nicer. Like removing the warning in start.jsx about the buttons as all buttons work now and renaming the "Select" button to "Scores" in app.jsx as I removed that functionality and replaced it with the notifications and renamed "Leaderboard" to "Scoreboard." Also cleaned up this file (README.md) to make it a bit more presentable.
+
