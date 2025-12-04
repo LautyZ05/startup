@@ -116,6 +116,10 @@ I finished ther mongoDB deliverable and everything thankfully works. Took me for
 
 This is actually from a day or two ago but I've finally been able to start making the connect four game to somewhat work. It, ummmm, doesn't tell you when you won or not as I haven't coded that part in but you can finally put the chips in and fill up the board which is pretty cool. It automatically starts with red chips cause yes and everytime you place the chip, it switches to the other color. Also it doesn't overlap colors and once you fill up a column it won't let you place anymore chips. Still trying to figure out how to code the win condition, I have some ideas but I'm not too sure. I don't want to make my file too big but I'm also aren't too sure if I should have the win condition function be called from a different file. But at least I'm one step closer to finishing that.
 
+### Dec 3rd, 2025
+
+Finished both WebSocket deliverable and my startup. Hopefully everything works well and there isn't many bugs. I spent today and the past few days adding, removing, and changing many parts of my code. Like adding to play.jsx so the game can finally finish and see who has won as well as send a websocket message saying wether user has won or lost. As well as adding new files to handle all the websocket connections. And cleaning up many pieces of my code to make my program look more presentable and a little less "in progress." I've made a website before for a differnt class a few years ago but this takes it to a whole other level lol. I'm really proud of what I've accomplished even though it's probably not the best but I like it and hopefully everything works out.
+
 ## AWS
 
 My IP address is: 52.201.35.163
